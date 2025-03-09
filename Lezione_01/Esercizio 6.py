@@ -10,4 +10,4 @@ if numero < 0:
     print("Per favore inserisci un numero positivo.")
 else:
     risultato = calcola_fattoriale(numero)
-    print(f"Il fattoriale di {numero} è {risultato}")
+    print(f"Il fattoriale di {numero} è {risultato}")  
