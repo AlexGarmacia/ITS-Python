@@ -1,1 +1,0 @@
-print("sono nel main.py")
