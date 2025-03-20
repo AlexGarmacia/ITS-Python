@@ -23,3 +23,15 @@ class Persona:
             self.age = 0
         else:
             self.age = age
+
+    # funzione che mi consente di ritornare il valore di self.name
+    def getName(self) -> str: #ci ritorna una stringa
+        return self.name 
+    
+    # funzione che mi consente di ritornare il valore di self.lastname
+    def getLastname(self) -> str:
+        return self.lastname
+    
+    # funzione che mi consente di ritornare il valore di self.age
+    def getAge(self) -> int: #restituisce il valore di self.age
+        return self.age
