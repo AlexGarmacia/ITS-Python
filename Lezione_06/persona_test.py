@@ -29,3 +29,8 @@ ag.setAge(20) #si mette l'età in negativo
 print("-----------")
 ag.displayData()
 
+print("-----------")
+
+print(ag.getName(), ag.getLastname(), ag.getAge() )
+
+
