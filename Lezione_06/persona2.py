@@ -35,3 +35,6 @@ class Persona:
     # funzione che mi consente di ritornare il valore di self.age
     def getAge(self) -> int: #restituisce il valore di self.age
         return self.age
+    
+def __str__(self) -> str:
+    return f"Nome:{self.name}\n Cognome:{self.lastname}\n Età:{self.age}"
