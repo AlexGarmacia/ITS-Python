@@ -1,0 +1,46 @@
+class Persona:
+    #costruttore
+    def __init__(self):
+        self.name = "" #stringa vuota
+        self.lastname = ""
+        self.age = 0
+    
+    # funzione che mostri in output i dati relativi a una persona
+    def displayData(self) -> None: #non mi ritorna niente in output
+        print(f"Nome: {self.name}\n Cognome: {self.lastname} \n Età: {self.age}") 
+    
+    # funzione che ci consenta di impostare il valore di self.name
+    def setName(self, name:str) -> None: #la funzione non ritorna niente perchè si limita a importare il valore di self.name
+        self.name = name 
+    
+    # funzione che ci consenta di importare il valore di self.lastname
+    def setLastname(self, lastname:str) -> None:
+        self.lastname = lastname
+    
+    #funzione che ci consenta di impostare il valore di self.age
+    def setAge(self, age:int) -> None:
+        if age < 0 or age > 130: 
+            self.age = 0
+        else:
+            self.age = age
+
+    # funzione che mi consente di ritornare il valore di self.name
+    def getName(self) -> str: #ci ritorna una stringa
+        return self.name 
+    
+    # funzione che mi consente di ritornare il valore di self.lastname
+    def getLastname(self) -> str:
+        return self.lastname
+    
+    # funzione che mi consente di ritornare il valore di self.age
+    def getAge(self) -> int: #restituisce il valore di self.age
+        return self.age
+    
+    #metodo speack() per la classe Persona che consente di simulare un saluto
+    def speak(self) -> None:
+        print(f"\n Hello! my name is {self.getName()}!\n)")
+    
+    def __str__(self) -> str:
+        return f"Nome:{self.name}\n Cognome:{self.lastname}\n Età:{self.age}"
+    
+    
